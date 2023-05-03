@@ -29,6 +29,69 @@ public class UtilArraySort {
 		testSortArray(); 
 		testSortVector();
 	}
+
+	
+	/**
+	 * Receives a generic list (integer, String, etc) unsorted 
+	 * and returns sorted in ascending or descending order.
+	 * 
+	 * @param orderType - 1 = ascending order or 2 = descending order
+	 * @param list - disordered list
+	 * 
+	 * @return list - ordered list.
+	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	private List sortArray( int orderType, List list ) {
+
+		Collections.sort( list );       //ascending order
+		
+		if( orderType == 2 ) 	  
+			Collections.reverse(list);  //descending order  - ordenar primeiro, depois reverter
+	
+		return list;
+	}
+
+	/**
+	 * Receives a integer vector unsorted 
+	 * and returns sorted in ascending or descending order.
+	 * 
+	 * @param orderType - 1 = ascending order or 2 = descending order
+	 * @param vector - disordered vector
+	 * 
+	 * @return vector - ordered vector.
+	 */
+	private Integer[] sortIntegerVector( int orderType, Integer[] vector ) {
+		
+		if( orderType == 1 ) 	      //ascending order
+			Arrays.sort( vector ); 
+
+		else if( orderType == 2 ) 	  //descending order
+			Arrays.sort( vector , Collections.reverseOrder() );
+		
+		return vector;
+	}
+	
+	/**
+	 * Receives a String vector unsorted 
+	 * and returns sorted in ascending or descending order.
+	 * 
+	 * @param orderType - 1 = ascending order or 2 = descending order
+	 * @param vector - disordered vector
+	 * 
+	 * @return vector - ordered vector.
+	 */
+	private String[] sortStringVector( int orderType, String[] vector ) {
+		
+		if( orderType == 1 ) 	     // ascending order
+			Arrays.sort( vector );  
+		
+		else if( orderType == 2 ) 	 //descending order			
+			Arrays.sort( vector , Collections.reverseOrder() );
+
+		return vector;
+	}
+	
+	
 	
 	private void testSortArray() {
 		
@@ -64,7 +127,7 @@ public class UtilArraySort {
 		printStringVector( sortStringVector( 2, v2 ) );
 		
 		System.out.println( " " );
-		int[] v1 = new int[]{ 33, 150, 10, 75};
+		Integer[] v1 = new Integer[]{ 33, 150, 10, 75};
 		printIntegerVector( sortIntegerVector( 1, v1 ) );
 		System.out.println( " " );
 		printIntegerVector( sortIntegerVector( 2, v1 ) );
@@ -82,7 +145,7 @@ public class UtilArraySort {
 		System.out.print( "] " );
 	}
 	
-	private void printIntegerVector( int[] vector){	
+	private void printIntegerVector( Integer[] vector){	
 		
 		System.out.print( "[ " );
 		for (int i = 0; i < vector.length; i++) {
@@ -93,80 +156,5 @@ public class UtilArraySort {
 		}
 		System.out.print( "] " );
 	}
-	
-	/**
-	 * Receives a generic list (integer, String, etc) unsorted 
-	 * and returns sorted in ascending or descending order.
-	 * 
-	 * @param orderType - 1 = ascending order or 2 = descending order
-	 * @param list - disordered list
-	 * 
-	 * @return list - ordered list.
-	 */
-	@SuppressWarnings({ "unchecked", "rawtypes" })
-	private List sortArray( int orderType, List list ) {
-		
-		Collections.sort( list ); //ascending order 
-		
-		if( orderType == 2 ) {	  //descending order
-			List descendingList = new ArrayList();
-			for (int i = list.size() - 1; i >= 0; i--) {
-				descendingList.add( list.get(i) );
-			}
-			list = descendingList;
-		}		
-		return list;
-	}
-
-	/**
-	 * Receives a integer vector unsorted 
-	 * and returns sorted in ascending or descending order.
-	 * 
-	 * @param orderType - 1 = ascending order or 2 = descending order
-	 * @param vector - disordered vector
-	 * 
-	 * @return vector - ordered vector.
-	 */
-	private int[] sortIntegerVector( int orderType, int[] vector ) {
-		
-		Arrays.sort( vector );  //sort in ascending order
-		
-		if( orderType == 2 ) {	  //descending order
-			int[] descendingVector = new int[ vector.length ];
-			int counter = 0;
-			for (int i = vector.length - 1; i >= 0; i--) {
-				descendingVector[counter] = vector[i];
-				counter++;
-			}
-			vector = descendingVector;
-		}	
-		return vector;
-	}
-	
-	/**
-	 * Receives a String vector unsorted 
-	 * and returns sorted in ascending or descending order.
-	 * 
-	 * @param orderType - 1 = ascending order or 2 = descending order
-	 * @param vector - disordered vector
-	 * 
-	 * @return vector - ordered vector.
-	 */
-	private String[] sortStringVector( int orderType, String[] vector ) {
-		
-		Arrays.sort( vector );  //sort in ascending order
-		
-		if( orderType == 2 ) {	  //descending order
-			String[] descendingVector = new String[ vector.length ];
-			int counter = 0;
-			for (int i = vector.length - 1; i >= 0; i--) {
-				descendingVector[counter] = vector[i];
-				counter++;
-			}
-			vector = descendingVector;
-		}	
-		return vector;
-	}
-	
 	
 }
