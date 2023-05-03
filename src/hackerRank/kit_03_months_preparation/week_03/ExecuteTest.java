@@ -62,7 +62,11 @@ public class ExecuteTest {
 			break;
 		
 		case 7:
-			Exe07.main(null);
+			try {
+				Exe07.main(null);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			break;
 			
 		case 8:

@@ -10,8 +10,7 @@ import hackerRank.kit_03_months_preparation.week_02.q05.Exe05;
 import hackerRank.kit_03_months_preparation.week_02.q06.Exe06;
 import hackerRank.kit_03_months_preparation.week_02.q07.Exe07;
 import hackerRank.kit_03_months_preparation.week_02.q08.Exe08;
-import hackerRank.kit_03_months_preparation.week_02.q09_mockTest.mockTest.ExeMockTest;
-import hackerRank.kit_03_months_preparation.week_02.q09_mockTest.sampleTest.ExeSampleTest;
+import hackerRank.kit_03_months_preparation.week_02.q09_mockTest.ExeMockTest;
 
 public class ExecuteTest {
 
@@ -70,10 +69,6 @@ public class ExecuteTest {
 			break;
 			
 		case 9:
-			ExeSampleTest.main(null);
-			break;
-		
-		case 10:
 			ExeMockTest.main(null);
 			break;
 
