@@ -66,8 +66,9 @@ public class UtilArraySort {
 		
 		boolean b = false;
 		
+		Arrays.sort( ints );
 		int index = Arrays.binarySearch(ints, k);
-		if( index > 0 )
+		if( index > -1 )
 			b = true;
 		
 		return b;

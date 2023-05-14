@@ -18,6 +18,7 @@ class UtilArraySortTest {
 	private List<Integer> listInt;
 	private String[] arrayString;
 	private Integer[] arrayInteger;
+	private int[] arrayInt;
 	
 	@Test
 	void sortListAscendingOrderTest() {
@@ -67,6 +68,13 @@ class UtilArraySortTest {
 		printArray( "TEST sortArray - Descending Order" );
 	}
 	
+	@Test
+	void arrayContainsTest(){
+		
+		boolean b = as.arrayContains( arrayInt, 10 );
+		Assertions.assertTrue( b );
+	}
+	
 	@BeforeAll
 	private static void init() {
 		as = new UtilArraySort();
@@ -90,6 +98,8 @@ class UtilArraySortTest {
 		arrayString = new String[]{ "Zu", "Bruna", "Geraldo", "Ana"};
 		
 		arrayInteger = new Integer[]{ 33, 150, 10, 75};
+		
+		arrayInt =  new int[]{ 33, 150, 10, 75};
 	}
 		
 	private void printList( String msg ) {
