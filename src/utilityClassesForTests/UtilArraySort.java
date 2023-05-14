@@ -26,7 +26,7 @@ public class UtilArraySort {
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List sortList( int orderType, List list ) {
-
+		
 		Collections.sort( list );       //ascending order
 		
 		if( orderType == 2 ) 	  
@@ -54,5 +54,24 @@ public class UtilArraySort {
 		
 		return vector;
 	}
+	
+	/**
+	 * Return true if the array contais int k or false if not.
+	 * 
+	 * @param int[] ints
+	 * @param int k 
+	 * @return boolean b - true if contais or false if not
+	 */
+	public boolean arrayContains( int[] ints, int k ) {
+		
+		boolean b = false;
+		
+		int index = Arrays.binarySearch(ints, k);
+		if( index > 0 )
+			b = true;
+		
+		return b;
+	}
+		
 	
 }
