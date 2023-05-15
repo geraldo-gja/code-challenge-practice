@@ -1,8 +1,8 @@
-package aubay.practice;
+package aubay.demo;
 
 import java.util.Arrays;
 
-public class Practice {
+public class Demo {
 	
 	       
 	public static boolean exists(int[] ints, int k) {

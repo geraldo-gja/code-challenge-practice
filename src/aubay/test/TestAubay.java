@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import aubay.Q01;
-import aubay.practice.Practice;
+import aubay.demo.Demo;
 
 class TestAubay {
 
@@ -37,8 +37,8 @@ class TestAubay {
 		int[] ints = { -9, 14, 3, 102};
 		int k1 = 102;
 		int k2 = 36;
-		boolean test1 = Practice.exists(ints, k1);
-		boolean test2 = Practice.exists(ints, k2);
+		boolean test1 = Demo.exists(ints, k1);
+		boolean test2 = Demo.exists(ints, k2);
 		
 		Assertions.assertTrue(test1);
 		Assertions.assertFalse(test2);
