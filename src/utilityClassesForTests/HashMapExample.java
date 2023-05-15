@@ -1,22 +1,25 @@
 package utilityClassesForTests;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
+/**
+ * TODO
+ * 
+ * Iterando por um HashMap em Java
+ * https://www.alura.com.br/artigos/iterando-por-um-hashmap-em-java?gclid=Cj0KCQjw1ZeUBhDyARIsAOzAqQJfcTtEx5DUJGsw_4CZbsFHTjpXAvBUjbxStahzMmAd3O0CRlQgYKQaAvKVEALw_wcB
+ */
 public class HashMapExample {
 
-	/**
-	 * TODO
-	 * 
-	 * Iterando por um HashMap em Java
-	 * https://www.alura.com.br/artigos/iterando-por-um-hashmap-em-java?gclid=Cj0KCQjw1ZeUBhDyARIsAOzAqQJfcTtEx5DUJGsw_4CZbsFHTjpXAvBUjbxStahzMmAd3O0CRlQgYKQaAvKVEALw_wcB
-	 */
-	
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	//	HashMap<String, String> mapEstados = getMapString(); 
 	//	HashMap<Integer, Integer> mapInteiros = getMapInteger(); 
+		sortHasMap();
 	}
 
 	
@@ -33,8 +36,7 @@ public class HashMapExample {
 		//ITERANDO valores e chaves
 		map.forEach( (key,value)->{
 			System.out.println(key+" = "+value);
-		});
-		
+		});	
 		
 		//###########  IMPORTANTE
 		map.replace("CE", "Fortaleza");   
@@ -50,8 +52,7 @@ public class HashMapExample {
 		System.out.println(" "); 
 		for (String sigla : map.values()) { 
 			System.out.print(sigla + " "); 
-		}
-		
+		}			
 
 		return map; 
 	}
@@ -88,5 +89,50 @@ public class HashMapExample {
 		return map; 
 	}
 
+	
+	public static void sortHasMap() { 
+		
+		HashMap<String, Integer> map = new HashMap<>(); 
+		
+		map.put("B", 20); 
+		map.put("D", 40); 
+		map.put("A", 10);
+		map.put("C", 30); 
+		map.put("E", 50); 
+	
+		//Ascendenting order and comparind by value
+		System.out.println("Ascendenting order");
+		
+		map.entrySet().stream()
+		.sorted( Map.Entry.<String, Integer>comparingByValue() )
+		.forEach(System.out::println);
+		
+		
+		//Descendeting order and comparind by key
+		System.out.println("");
+		System.out.println("Descendeting order");
+		
+		map.entrySet().stream()
+		.sorted( Map.Entry.<String, Integer>comparingByKey().reversed() )   
+		.forEach(System.out::println);
+
+		
+		
+		//recuperando o valor
+		System.out.println("");
+		System.out.println("Imprimindo lista");
+		
+		List<Integer> list = new ArrayList<Integer>();
+		map.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue())
+		.forEach( item -> {
+			list.add(item.getValue());
+			System.out.println(item.getValue());
+		} );
+		
+		
+	}
+	
+
+	
 }
 
