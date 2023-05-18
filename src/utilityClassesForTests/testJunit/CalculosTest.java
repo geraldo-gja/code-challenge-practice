@@ -10,7 +10,7 @@ class CalculosTest {
 	@Test
 	void isEvenPairTest() {
 		
-		boolean b = Calculos.isEvenPair(2);
+		boolean b = Calculos.isEvenNumber(2);
 		Assertions.assertTrue(b);
 	}
 	

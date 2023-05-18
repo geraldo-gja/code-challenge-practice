@@ -2,27 +2,8 @@ package utilityClassesForTests;
 
 public class Calculos {
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		System.out.println( Calculos.isEvenPair(8) );
-		System.out.println( Calculos.isEvenPair(3) );
-		
-		System.out.println( Calculos.isOddNumber(7) );
-		System.out.println( Calculos.isOddNumber(10) );
-		
-		System.out.println( Calculos.isDivisibleByNumber(10,5) );
-		System.out.println( Calculos.isDivisibleByNumber(10,3) );
-		
-		System.out.println( Calculos.isPrimeNumber(7) );
-		System.out.println( Calculos.isPrimeNumber(6) );
-		
-		System.out.println( Calculos.convertLotToByte(1) );
-		System.out.println( Calculos.convertLotToByte(9) );
-	}
-	
 	//número par
-	public static boolean isEvenPair( int n ) {
+	public static boolean isEvenNumber( int n ) {
 		
 		boolean r = false;
 		if( n % 2 == 0 )
