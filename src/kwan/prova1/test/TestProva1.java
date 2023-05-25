@@ -1,15 +1,15 @@
-package kwan.test;
+package kwan.prova1.test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import kwan.Q20;
-import kwan.Q21;
-import kwan.Q22;
+import kwan.prova1.Q20;
+import kwan.prova1.Q21;
+import kwan.prova1.Q22;
 
 
 
-class TestKwan {
+class TestProva1 {
 
 	
 	@Test

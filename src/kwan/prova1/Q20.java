@@ -1,4 +1,4 @@
-package kwan;
+package kwan.prova1;
 
 public class Q20 {
 
