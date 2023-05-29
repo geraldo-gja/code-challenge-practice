@@ -6,7 +6,7 @@ import java.util.List;
 public class SweepsString {
 
 	/**
-	 * TODO - principais métodos
+	 * TODO - principais mï¿½todos
 	 * 
 	 * Character.toLowerCase(c)
 	 * Character.toUpperCase(c)
@@ -34,6 +34,8 @@ public class SweepsString {
 
 		System.out.println( listWords( ".", "039.909.023-18") );
 		System.out.println( advancedListWords( ".", new String[]{ ",", ".", "-"}, "039.909.023-18") );
+		
+		alphabetArray();
 	}
 	
 	/**
@@ -78,6 +80,31 @@ public class SweepsString {
 		
 		return list;
 	}
+	
+	private char[] alphabetArray( ) {
+		
+		char[] letters = new char[52];
+		int countArrayn = 0;
+		
+		for (char ch = 'a'; ch <= 'z'; ch++) {
+			letters[countArrayn] = ch;
+			countArrayn++;
+		}
+		
+		for (char ch = 'A'; ch <= 'Z'; ch++) {
+			letters[countArrayn] = ch;
+			countArrayn++;
+		}
+		
+		for (int i = 0; i < letters.length; i++) {
+			char c = letters[i];
+			System.out.println(c + " " + i);
+		}
+		
+		
+		return letters;
+	}
+	
 	
 	/**
 	 * Scans a String separating words from a defined breakpoint. 
