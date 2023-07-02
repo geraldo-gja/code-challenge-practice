@@ -1,0 +1,29 @@
+
+* 1º tentativa 
+  Prova realizada no dia 25/05/23
+* O Helder Pinto, da Kwan me encaminhou a prova
+
+* Considerações:
+- Foram 1:30 horas de dura��o. Achei pouqu�ssimo tempo.
+
+- 1º quest�o foi em JavaScript, nem tentei
+
+- 2º quest�o foi backend Java. sistema bancário
+  Adorei a prova. mas resolvi em 3:30 horas. 
+  1:30 é pouco tempo para fazer.
+  Demorei mais porque n�o estava entendendo o que deveria fazer.
+  também não estava entendendo a figura UML. quando pesquisei e entendi o diagrama, ficou mais fácil resolver a prova.
+  Também olhava a chama dos testes para entender o fluxo de execu��o das classes.
+
+* Atenção:
+ no projeto do banking original, eu acrescentei @SuppressWarnings("unused") 
+ apenas para desaparecer os Warnings da minha IDE, no projeto original não tem. 
+  
+  
+##############################
+ 
+* 2º tentativa 
+ prova realizada no dia 02/07/23
+ A Eliana me passou o teste, +351 912 327 828
+ 
+* acho que concluí 100% 
