@@ -1,16 +1,15 @@
-package kwan.prova1.test;
+package kwan.test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import kwan.prova1.Q20;
-import kwan.prova1.Q21;
-import kwan.prova1.Q22;
+import kwan.Q20;
+import kwan.Q21;
+import kwan.Q22;
 
 
 
 class TestProva1 {
-
 	
 	@Test
 	void findSumPairTest() {
@@ -48,7 +47,5 @@ class TestProva1 {
 		}
 		//Assertions.assertEquals(5, array.length);
 	}
-
-	
 	
 }

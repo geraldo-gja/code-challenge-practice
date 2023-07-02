@@ -1,4 +1,4 @@
-package kwan.prova1;
+package kwan;
 
 import java.util.ArrayList;
 import java.util.HashMap;
