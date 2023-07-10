@@ -6,7 +6,7 @@ public class Teste_BairesDev {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Auto-generated method stub
 		
 
 		Teste_BairesDev teste = new Teste_BairesDev();

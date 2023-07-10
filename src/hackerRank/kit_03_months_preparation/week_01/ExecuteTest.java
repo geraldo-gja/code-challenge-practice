@@ -15,19 +15,19 @@ import hackerRank.kit_03_months_preparation.week_01.q08_mockTest.sampleTest.ExeS
 public class ExecuteTest {
 
 	/**
-	 * IMPORTATE: todas as questões foram resolvidas utilizando o Java 8
+	 * IMPORTATE: todas as questï¿½es foram resolvidas utilizando o Java 8
 	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Auto-generated method stub
 		
 		int num = 1;
 		
 		try {
 			execute(num);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			//Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

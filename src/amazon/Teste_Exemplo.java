@@ -22,15 +22,15 @@ public class Teste_Exemplo {
 	Grid: [[1,0,0,0,1],[1,0,1,0,0]] is not valid because the second robot
 	started at index 4 but did not have a valid position on the sext step 
 	
-	* OBS: ele da 3 soluções possíveis 
-	       1º solução, minuto 04:00 do video
-	       2º solução, minuto 08:20 e 09:00 do video
-	       3º solução, minuto 11:00 do video
+	* OBS: ele da 3 soluï¿½ï¿½es possï¿½veis 
+	       1ï¿½ soluï¿½ï¿½o, minuto 04:00 do video
+	       2ï¿½ soluï¿½ï¿½o, minuto 08:20 e 09:00 do video
+	       3ï¿½ soluï¿½ï¿½o, minuto 11:00 do video
 	
 	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Auto-generated method stub
 		
 		Teste_Exemplo teste = new Teste_Exemplo();
 
@@ -57,7 +57,7 @@ public class Teste_Exemplo {
 
 	int numRobots = 2;
 	
-	//1º solução, minuto 04:00 do video
+	//1ï¿½ soluï¿½ï¿½o, minuto 04:00 do video
 	boolean isValidPath_1( int[][] grid, int numRobots) {
 		//not using numRobots, not verifying robot count
 		//start from row 0
@@ -76,7 +76,7 @@ public class Teste_Exemplo {
 
 	
 
-	//2º solução, minuto 09:00 do video
+	//2ï¿½ soluï¿½ï¿½o, minuto 09:00 do video
 	public boolean isValidPath( int numRobots, int[][] grid ) {
 		
 		for (int row = 0; row < grid.length; row++) {
@@ -122,7 +122,7 @@ public class Teste_Exemplo {
 	
 	
 	//minuto 08:20 do video
-	//OBS: biblioteca Math.abs (minuto 8:40), garante sempre retonar número positivo
+	//OBS: biblioteca Math.abs (minuto 8:40), garante sempre retonar nï¿½mero positivo
 	public boolean validPath( int[] curPosition, int[] nexPosition ) {
 		
 		for (int i = 1; i < curPosition.length; i++) {	

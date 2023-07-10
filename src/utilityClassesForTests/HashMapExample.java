@@ -6,8 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * TODO
- * 
  * Iterando por um HashMap em Java
  * https://www.alura.com.br/artigos/iterando-por-um-hashmap-em-java?gclid=Cj0KCQjw1ZeUBhDyARIsAOzAqQJfcTtEx5DUJGsw_4CZbsFHTjpXAvBUjbxStahzMmAd3O0CRlQgYKQaAvKVEALw_wcB
  */
@@ -15,7 +13,7 @@ public class HashMapExample {
 
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Auto-generated method stub
 
 	//	HashMap<String, String> mapEstados = getMapString(); 
 	//	HashMap<Integer, Integer> mapInteiros = getMapInteger(); 
@@ -28,10 +26,10 @@ public class HashMapExample {
 		HashMap<String, String> map = new HashMap<>(); 
 		
 		map.put("AC", "Acre"); map.put("AL", "Alagoas");
-		map.put("AP", "Amapá"); map.put("AM", "Amazonas");
-		map.put("BA", "Bahia"); map.put("CE", "Ceará"); 
-		map.put("DF", "Distrito Federal"); map.put("ES", "Espírito Santo"); 
-		map.put("GO", "Goiás"); 
+		map.put("AP", "Amapï¿½"); map.put("AM", "Amazonas");
+		map.put("BA", "Bahia"); map.put("CE", "Cearï¿½"); 
+		map.put("DF", "Distrito Federal"); map.put("ES", "Espï¿½rito Santo"); 
+		map.put("GO", "Goiï¿½s"); 
 		
 		//ITERANDO valores e chaves
 		map.forEach( (key,value)->{

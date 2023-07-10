@@ -6,7 +6,7 @@ import java.util.List;
 public class SweepsString {
 
 	/**
-	 * TODO - principais m�todos
+	 * principais m�todos
 	 * 
 	 * Character.toLowerCase(c)
 	 * Character.toUpperCase(c)
@@ -18,8 +18,6 @@ public class SweepsString {
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		SweepsString ss = new SweepsString();
 		ss.test();	
 	}

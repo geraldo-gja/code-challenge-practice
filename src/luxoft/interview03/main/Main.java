@@ -20,13 +20,13 @@ public class Main {
     	
     	Main m = new Main();
     	
-    	//TODO - diagonal reverse sort of matrix values
+    	//diagonal reverse sort of matrix values
     	List<File> sortFiles = m.diagonalReverseSort( FileSystem.files );
 
-        //TODO search for files
+        //search for files
     	List<File> filteredListOfFiles = m.searhForFiles( sortFiles );
     	
-        //TODO print list of files found for previous search
+        //print list of files found for previous search
     	m.printListFiles(filteredListOfFiles);
     }
 
@@ -68,7 +68,7 @@ public class Main {
      */
     private List<File> searhForFiles( List<File> list ) {
     	
-    	//TODO - asking filter questions
+    	//asking filter questions
     	Scanner read = new Scanner(System.in);
     	String answer = null;
     	Integer maxSize = null;
@@ -106,7 +106,7 @@ public class Main {
     	}   	
     	read.close();
     	
-    	//TODO - applying the filters
+    	//applying the filters
     	List<File> filteredListOfFiles = new ArrayList<File>();
     	
     	for (int i = 0; i < list.size(); i++) {
