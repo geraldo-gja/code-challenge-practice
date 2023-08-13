@@ -12,22 +12,19 @@ import java.util.stream.Collectors;
 public class Prova {
 
 	public static void main(String[] args) {
-		//onlyOddNumbers();
-		//duplicateNumbers();
+		onlyOddNumbers();
+		duplicateNumbers();
 		groupByName();
-		//testeReferencia();
+		testeReferencia();
 	}
 	
 	//Q01
-	public static void onlyOddNumbers(){
-	    
+	public static void onlyOddNumbers(){	    
 		final List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9); 
-		List<Integer> output = new LinkedList<Integer>();
-	    
+		List<Integer> output = new LinkedList<Integer>();    
 	    output = numbers.stream()
 	    		.filter( p ->  p % 2 != 0 )
-	    		.collect(Collectors.toList());
-	       
+	    		.collect(Collectors.toList());       
 	    System.out.println(output);    
 	}
 	
@@ -71,7 +68,6 @@ public class Prova {
 		String a2 = new String("Java");
 		String a3 = a1;
 		String a4 = "Java";
-		
 		//"What is the output?
 		System.out.println(a1 == a2);      //  -> false. Pq compara referencia		
 		System.out.println(a1 == a3);      //  -> true
