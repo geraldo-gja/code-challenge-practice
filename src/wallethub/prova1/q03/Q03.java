@@ -1,4 +1,4 @@
-package wallethub.q03;
+package wallethub.prova1.q03;
 
 import java.util.LinkedList;
 import java.util.List;

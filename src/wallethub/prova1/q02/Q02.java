@@ -1,4 +1,4 @@
-package wallethub.q02;
+package wallethub.prova1.q02;
 
 public class Q02 {
 	

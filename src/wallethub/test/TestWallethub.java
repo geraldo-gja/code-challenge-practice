@@ -3,14 +3,26 @@ package wallethub.test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import wallethub.q01.Q01;
-import wallethub.q02.Q02;
-import wallethub.q03.Q03;
-import wallethub.q04.Q04;
-import wallethub.q05.Q05;
+import wallethub.prova2.Exam;
+import wallethub.prova1.q01.Q01;
+import wallethub.prova1.q02.Q02;
+import wallethub.prova1.q03.Q03;
+import wallethub.prova1.q04.Q04;
+import wallethub.prova1.q05.Q05;
 
 class TestWallethub {
 
+	@Test
+	void SimpleModeTest() {
+		
+		Assertions.assertEquals(5, Exam.SimpleMode(new int[] {5,5,2,2,1}) );
+		Assertions.assertEquals(-1, Exam.SimpleMode(new int[] {3,4,1,6,10}) );
+		
+		Assertions.assertEquals(1, Exam.SimpleMode(new int[] {3,1,5,5,2,2,1}) );
+		Assertions.assertEquals(2, Exam.SimpleMode(new int[] {3,2,2,5,5,1}) );
+	}
+	
+	
 	@Test
 	void q01LongestWordTest() {
 
